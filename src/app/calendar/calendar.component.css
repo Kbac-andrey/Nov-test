@@ -1,0 +1,90 @@
+table {
+  color: #666;
+}
+th:first-child,
+td:first-child {
+  position: sticky;
+  left: 0px;
+}
+
+tr:nth-child(1) th,
+tr:nth-child(2) th {
+  position: static;
+}
+
+td:first-child {
+  color: #6e68d2;
+  opacity: 0.5;
+}
+.mouths-title {
+  text-align: center;
+  border: 0;
+}
+.cars-title {
+  vertical-align: middle;
+  padding: 0 30px;
+}
+.btn-style {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  margin: 0 15px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+.btn-style:active {
+  outline: none !important;
+}
+.btn-style:focus {
+  outline: none !important;
+}
+.btn-style:hover {
+  color: #fff;
+}
+.car-info {
+  font-size: 15px;
+}
+
+.date-start {
+  position: relative;
+}
+.range {
+  border-radius: 15px;
+  background-color: #0c8;
+  color: white;
+  position: absolute;
+  top: 0;
+  padding: 10px 5px;
+  margin-left: 0;
+  z-index: 2;
+  left: 0;
+  opacity: 0.8;
+}
+.direction {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.w2 {
+  width: 85px;
+}
+.w3 {
+  width: 130px;
+}
+.w5 {
+  width: 180px;
+}
+.w7 {
+  width: 247px;
+}
+.w10 {
+  width: 387px;
+}
+.yellow {
+  background-color: #eaf539;
+}
+.purple {
+  background-color: #c05;
+}
+.primary {
+  background-color: #06a;
+}

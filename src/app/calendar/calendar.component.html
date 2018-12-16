@@ -1,0 +1,192 @@
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th rowspan="2" class="cars-title">Cars</th>
+        <th colspan="20" class="mouths-title">
+          <span (click)="prevMonth()" class="previous-arrow btn-style"><</span>
+          <span>{{getCurrentDate()}}</span>
+          <span (click)="nextMonth()" class="next-arrow btn-style">></span>
+        </th>
+      </tr>
+      <tr>
+        <th *ngFor="let day of days">{{day + 1}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="car-info">
+            {{cars[0].model}}
+            <div class="badge badge-info">
+              {{cars[0].stateNumber}}
+            </div>
+          </div>
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td class="date-start">
+          <div class="range w5">
+            <div>{{cars[0].reservations[0].name}}</div>
+            <div>
+              {{cars[0].reservations[0].price}}€
+              <span class="direction">{{cars[0].reservations[0].direction}}</span>
+            </div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="date-start">
+          <div class="range w2 purple">
+            <div>{{cars[0].reservations[1].name}}</div>
+            <div>
+              {{cars[0].reservations[1].price}}€
+              <span class="direction">{{cars[0].reservations[1].direction}}</span>
+            </div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="car-info">
+            {{cars[1].model}}
+            <div class="badge badge-info">
+              {{cars[1].stateNumber}}
+            </div>
+          </div>
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+        <td class="date-start">
+          <div class="range w10 yellow">
+            <div>{{cars[1].reservations[1].name}}</div>
+            <div>
+              {{cars[1].reservations[0].price}}€
+              <span class="direction">{{cars[1].reservations[1].direction}}</span>
+            </div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="date-start">
+          <div class="range w3">
+            <div>{{cars[1].reservations[0].name}}</div>
+            <div>
+              {{cars[1].reservations[0].price}}€
+              <span class="direction">{{cars[1].reservations[0].direction}}</span>
+            </div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="car-info">
+            {{cars[2].model}}
+            <div class="badge badge-info">
+              {{cars[2].stateNumber}}
+            </div>
+          </div>
+        </td>
+        <td class="date-start">
+          <div class="range w7">
+            <div>{{cars[2].reservations[0].name}}</div>
+            <div>
+              {{cars[2].reservations[0].price}}€
+              <span class="direction">{{cars[2].reservations[0].direction}}</span>
+            </div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="date-start">
+          <div class="range w5 primary">
+            <div>{{cars[2].reservations[1].name}}</div>
+            <div>
+              {{cars[2].reservations[1].price}}€
+              <span class="direction">{{cars[2].reservations[1].direction}}</span>
+            </div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

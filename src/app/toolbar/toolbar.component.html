@@ -1,0 +1,9 @@
+<div class="toolbar-container">
+    <div class="navigation-holder">
+        <button class="today-btn btn-style" (click)="showDay()">today</button>
+    </div>
+    <div class="header-text-holder" *ngIf="!dayOpen">
+        <h1 class="full-date">{{today | date:'fullDate'}}</h1>
+    </div>
+</div>
+<div class="reservations-title">Browse reservations</div>
